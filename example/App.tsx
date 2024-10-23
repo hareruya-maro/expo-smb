@@ -1,20 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-import * as ExpoSmb from 'expo-smb';
+import * as Settings from "expo-smb";
+import { Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{ExpoSmb.hello()}</Text>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Theme: {Settings.getTheme()}</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
