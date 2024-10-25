@@ -57,6 +57,18 @@ target 'exposmbexample' do
       :ccache_enabled => podfile_properties['apple.ccacheEnabled'] == 'true',
     )
 
+    installer.pods_project.targets.each do |target|
+      # 特定のPod名をチェック
+      if target.name == 'SMBClient'
+        target.build_configurations.each do |config|
+          puts target.name, config.name
+          if config.name == 'Debug'
+            config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+          end
+        end
+      end
+    end
+
     # This is necessary for Xcode 14, because it signs resource bundles by default
     # when building for devices.
     installer.target_installation_results.pod_target_installation_results

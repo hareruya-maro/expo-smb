@@ -38,6 +38,7 @@ PODS:
     - Yoga
   - ExpoSmb (0.1.0):
     - ExpoModulesCore
+    - SMBClient (~> 0.0)
   - FBLazyVector (0.74.5)
   - fmt (9.1.0)
   - glog (0.3.5)
@@ -1201,6 +1202,7 @@ PODS:
     - React-logger (= 0.74.5)
     - React-perflogger (= 0.74.5)
     - React-utils (= 0.74.5)
+  - SMBClient (0.0.9)
   - SocketRocket (0.7.0)
   - Yoga (0.0.0)
 
@@ -1272,6 +1274,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - SMBClient
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1411,7 +1414,7 @@ SPEC CHECKSUMS:
   ExpoFont: 00756e6c796d8f7ee8d211e29c8b619e75cbf238
   ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
   ExpoModulesCore: 831ece8311a489418746925820bbffdda587d6f4
-  ExpoSmb: 7fea3330cb988490d8e3a99095ee3cdb9d012d00
+  ExpoSmb: 9ceb7498d5f3f917469366bfcdabe83fec6a2df0
   FBLazyVector: ac12dc084d1c8ec4cc4d7b3cf1b0ebda6dab85af
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
@@ -1463,9 +1466,10 @@ SPEC CHECKSUMS:
   React-runtimescheduler: cfbe85c3510c541ec6dc815c7729b41304b67961
   React-utils: f242eb7e7889419d979ca0e1c02ccc0ea6e43b29
   ReactCommon: f7da14a8827b72704169a48c929bcde802698361
+  SMBClient: fd08e91788566a211ae11d57240ae0cd43375a16
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 950bbfd7e6f04790fdb51149ed51df41f329fcc8
 
-PODFILE CHECKSUM: c4c1880ddeae1ac25581793fe2bd9079d61d17cf
+PODFILE CHECKSUM: 8fa842d2f64071d4eb1008fa93ab7ab91625bed8
 
 COCOAPODS: 1.15.2
