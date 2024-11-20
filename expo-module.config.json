@@ -1,9 +1,17 @@
 {
-  "platforms": ["ios", "tvos", "android", "web"],
-  "ios": {
-    "modules": ["ExpoSmbModule"]
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "ExpoSmbModule"
+    ]
   },
   "android": {
-    "modules": ["expo.modules.smb.ExpoSmbModule"]
+    "modules": [
+      "expo.modules.smb.ExpoSmbModule"
+    ]
   }
 }

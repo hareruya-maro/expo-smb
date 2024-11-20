@@ -10,19 +10,31 @@ Pod::Spec.new do |s|
   s.license        = package['license']
   s.author         = package['author']
   s.homepage       = package['homepage']
-  s.platforms      = { :ios => '13.4', :tvos => '13.4' }
+  s.platforms      = {
+    :ios => '15.1',
+    :tvos => '15.1'
+  }
   s.swift_version  = '5.4'
   s.source         = { git: 'https://github.com/hareruya-maro/expo-smb' }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
-  s.dependency 'SMBClient', '~> 0.0'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
-    'SWIFT_COMPILATION_MODE' => 'wholemodule'
+    'USE_FRAMEWORKS' => 'dynamic'
   }
 
-  s.source_files = "**/*.{h,m,swift}"
+  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
+
+  if defined?(:spm_dependency)
+    spm_dependency(s,  
+      url: 'https://github.com/hareruya-maro/SMBClient.git', 
+      requirement: {kind: 'upToNextMajorVersion', minimumVersion: '1.0.0'}, 
+      products: ['SMBClient'] 
+    ) 
+  else 
+    raise "Please upgrade React Native to >=0.75.0 to use SPM dependencies." 
+  end 
 end

@@ -1,0 +1,15 @@
+{
+  "originHash" : "9493f5eab1a0eaf45bfce99ba085447d45741ff4ba59ac40b0f174b0ae2ff20b",
+  "pins" : [
+    {
+      "identity" : "smbclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hareruya-maro/SMBClient.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3b36dcd5b152faec35da073cfd6085375697e6e1"
+      }
+    }
+  ],
+  "version" : 3
+}

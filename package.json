@@ -25,18 +25,19 @@
   "bugs": {
     "url": "https://github.com/hareruya-maro/expo-smb/issues"
   },
-  "author": "Haruya Nakamura <hareruya.maro@gmail.com> (https://github.com/hareruya-maro)",
+  "author": "hareruya-maro <hareruya.maro@gmail.com> (hareruya-maro)",
   "license": "MIT",
   "homepage": "https://github.com/hareruya-maro/expo-smb#readme",
+  "dependencies": {},
   "devDependencies": {
-    "@types/react": "^18.0.25",
-    "expo-module-scripts": "^3.5.2",
-    "expo-modules-core": "^1.12.24"
+    "@types/react": "~18.3.12",
+    "expo-module-scripts": "^4.0.2",
+    "expo": "~52.0.0",
+    "react-native": "0.76.0"
   },
   "peerDependencies": {
     "expo": "*",
     "react": "*",
     "react-native": "*"
-  },
-  "packageManager": "yarn@1.22.22"
+  }
 }
